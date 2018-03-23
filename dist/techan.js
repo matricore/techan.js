@@ -2376,6 +2376,8 @@ module.exports = function(d3_select, d3_event, d3_mouse, d3_dispatch, accessor_c
         })
         .on('mousemove', mousemoveRefresh(group, pathVerticalSelection, pathHorizontalSelection,
           xAnnotationSelection, yAnnotationSelection)
+	.on('touchmove', mousemoveRefresh(group, pathVerticalSelection, pathHorizontalSelection,
+          xAnnotationSelection, yAnnotationSelection)
         );
 
       refresh(group, pathVerticalSelection, pathHorizontalSelection, xAnnotationSelection, yAnnotationSelection);
